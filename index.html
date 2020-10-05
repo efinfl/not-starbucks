@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NotSTARBUCKS</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Map Box -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="logo.png"></a>
+      <br>
+      <!-- <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul> -->
+      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div> -->
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center text-lighten-2">NotSTARBUCKS</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Coffee Without The Corporation</h5>
+        </div>
+        <div class="row center">
+          <a id="geolocation" class="waves-effect waves-light btn"><i class="material-icons left">free_breakfast</i>Start
+            Search</a>
+          <!-- <a id="geolocation" href="https://4sq.com/2KDvskp" target="_blank" class="waves-effect waves-light btn"><i class="material-icons left">add_location</i>Search Coffee Shops</a> -->
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Listing   -->
+      <div class="row" id="display">
+
+        <table id="coffeeShops">
+          <thead>
+            <tr>
+              <th><i class="material-icons left small" id="headerIcon">free_breakfast</i> </th>
+              <th id="alpha">Coffee Shop</th>
+              <th id="dist">Distance (miles)</th>
+              <th>Address</th>
+              <th>City State</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          </tbody>
+        </table>
+        <div id="map"></div>
+
+        <!-- <div class="col s12" id="display">
+          <div></div> -->
+        <!-- <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Robust, black, iced, fair trade</h5>
+
+            <p class="light">Decaffeinated coffee iced crema affogato in milk instant black. Eu, espresso mocha est café au lait roast sugar qui plunger pot chicory pumpkin spice flavour. Caffeine, americano galão latte arabica, dripper aroma shop and cortado kopi-luwak. Robust viennese cultivar ut, milk filter sit variety percolator. Et, half and half, rich, aftertaste, beans caramelization, espresso as grinder fair trade at roast.</p>
+          </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Cup blue mountain</h5>
+
+            <p class="light">Filter, aromatic organic rich, blue mountain bar percolator organic aged half and half iced spoon. Redeye sit as instant id, et so irish ristretto french press. Mug, and carajillo java, viennese bar viennese robusta and white. Chicory cappuccino trifecta frappuccino beans eu acerbic and turkish trifecta aged dripper. Frappuccino, cultivar organic and flavour iced froth turkish galão lungo.</p>
+          </div>
+        </div> -->
+
+        <!-- <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Instant crema robust aroma</h5>
+
+            <p class="light">Half and half pumpkin spice french press, sweet, milk doppio pumpkin spice half and half breve. Redeye extra eu sweet iced galão single shot. Whipped half and half, to go cortado grinder medium plunger pot. Macchiato robust grounds, acerbic et decaffeinated viennese cream instant. Single origin aroma flavour, shop, latte crema that redeye aroma café au lait robust.</p>
+          </div>
+        </div> -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- changed content here -->
+  <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h5 class="header col s12 light">As seasonal blue mountain skinny frappuccino a blue mountain.</h5>
+          </div>
+        </div>
+      </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpcC5fW4NWY4z01O_is03qruYfzM_LAi8V9dLGsvDqbsRKHw/viewform?embedded=true" width="640" height="611" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          <!-- <p class="left-align light">Est, cup, froth half and half eu milk a decaffeinated viennese. Bar, fair trade
+            chicory eu siphon filter body. Caramelization latte chicory cream grounds extra strong brewed pumpkin spice
+            aroma. Lungo variety turkish skinny cultivar roast lungo kopi-luwak decaffeinated. Turkish, robusta
+            turkish, chicory, caffeine strong sit shop medium chicory.</p> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">As seasonal blue mountain skinny frappuccino a blue mountain.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About NotSTARBUCKS</h5>
+          <p class="grey-text text-lighten-4">We are a team of coders and coffee enthusiasts working on this project
+            like it's our full time job. Any feedback would help support and continue development on this project and
+            is greatly appreciated.</p>
+
+
+        </div>
+        <!-- <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      <div class="col l3 s12"> -->
+          <h5 class="white-text">Team</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/in/jessicafriday/">Jessica Friday</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/carlocabrera/">Carlo Cabrera</a></li>
+            <li><a class="white-text" href="#!">Eric Figueroa</a></li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="https://github.com/Srqgal70/NotStarbucks">G5</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
